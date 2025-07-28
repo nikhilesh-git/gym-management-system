@@ -18,7 +18,7 @@ A full-stack web application for managing gym operations such as member records,
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/gym-management-system.git
+git clone https://github.com/nikhilesh-git/gym-management-system.git
 cd gym-management-system
 ```
 
