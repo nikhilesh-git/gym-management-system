@@ -1,0 +1,68 @@
+.bill-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    list-style-type: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.bill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a305b;
+    margin: 0;
+}
+
+.method-tag {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+}
+
+.method-tag.cash {
+    background-color: #28a745;
+}
+
+.method-tag.upi {
+    background-color: #007bff;
+}
+
+.method-tag.debitcard {
+    background-color: #6f42c1;
+}
+
+.method-tag.creditcard {
+    background-color: #ff9800; /* or any distinct color */
+}
+
+.date-container {
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+}
+
+.label {
+    font-weight: 500;
+    color: #1a305b;
+}

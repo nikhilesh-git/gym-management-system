@@ -1,0 +1,132 @@
+.bg-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 60px;
+}
+.dashboard-container{
+    background-color: rgb(242, 246, 249);
+    height: calc(100vh - 60px);
+    width: 100%;
+    padding-left: 20px;
+}
+.dashboard-heading{
+    font-size: 48px;
+    color: rgb(22, 6, 76);;
+    font-weight: 500;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-supplement-button {
+    width: 140px;
+    height: 38px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+
+.add-supplement-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.add-supplement-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;  
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-supplement-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a305b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #1a305b;
+  outline: none;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.edit-button {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #1a305b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #162847;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #000;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}

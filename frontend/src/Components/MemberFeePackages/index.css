@@ -1,0 +1,117 @@
+/* Main container */
+.member-bg-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #e0ecf8, #f6f9fc);
+}
+
+/* Sidebar + Dashboard layout */
+.sidebar-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #1a305b;
+  color: white;
+  min-height: calc(100vh - 90px);
+}
+
+/* Main dashboard scrollable container */
+.dashboard-container {
+  flex: 1;
+  padding: 40px 20px;
+  overflow-y: auto;
+  background-color: #f2f6f9;
+}
+
+/* Heading */
+.dashboard-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c4250;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Package card list */
+.packages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Individual package card */
+.member-package-card {
+  background: linear-gradient(145deg, #ffffff, #f1f4f8);
+  padding: 28px;
+  border-radius: 20px;
+  border-left: 6px solid #0068b8;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.package-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0084b8;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.package-description,
+.package-duration,
+.package-price {
+  font-size: 16px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon */
+.icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Price styling */
+.package-price {
+  color: #d63031;
+  font-weight: 600;
+}
+
+.package-duration {
+  color: #0984e3;
+  font-weight: 600;
+}
+
+.package-description {
+  color: #636e72;
+}
+
+/* Span inside price/duration */
+.package-price span,
+.package-duration span {
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+/* Fallback texts */
+.loading-text,
+.no-packages {
+  font-size: 20px;
+  color: #636e72;
+  text-align: center;
+  margin-top: 30px;
+}

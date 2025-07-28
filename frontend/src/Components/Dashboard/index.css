@@ -1,0 +1,28 @@
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh); /* or remove this line completely */
+  overflow-y: hidden;
+}
+
+
+.sidebar-container {
+  display: flex;
+  flex: 1;
+  margin-top: 90px;
+
+}
+
+.sidebar {
+  width: 230px;
+  background-color: #1a305b;
+}
+
+.dashboard-container {
+  flex: 1;
+  background-color: rgb(242, 246, 249);
+  overflow-y: scroll;
+  padding: 20px;
+  height: 100%;
+}

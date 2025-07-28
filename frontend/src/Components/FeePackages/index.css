@@ -1,0 +1,72 @@
+.fee-dashboard-container {
+  background-color: rgb(242, 246, 249);
+  height: calc(100vh - 60px);
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.fee-dashboard-heading {
+  font-size: 36px;
+  color: rgb(22, 6, 76);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.fee-packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fee-package-card {
+  background-color: #d1e4f7;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.fee-package-card:hover {
+  transform: scale(1.02);
+}
+
+.fee-package-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a305b;
+  margin-bottom: 10px;
+}
+
+.fee-package-detail {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-container{
+  overflow-y: scroll;
+}
+.packages-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

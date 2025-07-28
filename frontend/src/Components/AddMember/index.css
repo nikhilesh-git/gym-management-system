@@ -1,0 +1,121 @@
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh); /* or remove this line completely */
+  overflow-y: hidden;
+}
+
+
+.sidebar-container {
+  display: flex;
+  flex: 1;
+  margin-top: 90px;
+
+}
+
+.sidebar {
+  width: 230px;
+  background-color: #1a305b;
+}
+
+.container {
+  flex: 1;
+  background-color: rgb(242, 246, 249);
+  overflow-y: scroll;
+  padding: 20px;
+  height: 100%;
+}
+.add-member-heading{
+    font-size: 38px;
+    color: rgb(22, 6, 76);;
+    font-weight: 500;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+  min-width: 650px;
+  padding: 30px;
+  background-color: rgb(211, 239, 250);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(43, 153, 189);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+}
+
+.input{
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.input:focus {
+  border-color: #11345a;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  background-color: #fff;
+}
+
+.required{
+    color: rgb(207, 34, 34);
+    margin-top: 0px;
+}
+
+.input-container{
+    margin: 10px;
+    width: 300px;
+}
+
+.button{
+    background-color: #007bff; /* Primary blue */
+    margin-top: 10px;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.button:hover{
+  background-color: #0056b3;
+  box-shadow: 0 6px 10px rgba(0, 91, 187, 0.4);
+}
+
+.button:active {
+  background-color: #004494;
+  transform: scale(0.98);
+}
+

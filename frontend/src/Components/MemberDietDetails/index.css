@@ -1,0 +1,39 @@
+.dashboard-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a305b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.diet-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333333;
+}
+
+.diet-item p {
+  margin: 10px 0;
+}
+
+.diet-item strong {
+  color: #1a305b;
+}
+
+@media screen and (max-width: 768px) {
+  .diet-item {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .dashboard-heading {
+    font-size: 24px;
+  }
+}

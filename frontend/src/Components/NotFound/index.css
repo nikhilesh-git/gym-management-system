@@ -1,0 +1,22 @@
+/* index.css */
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+  background-color: #f9f9f9; /* light background */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-direction: column;
+}
+
+.not-found-img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}

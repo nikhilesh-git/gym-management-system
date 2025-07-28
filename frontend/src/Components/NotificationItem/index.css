@@ -1,0 +1,63 @@
+.notification-item {
+  list-style-type: none;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-left: 6px solid #007bff;
+}
+
+.notification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.notification-item::before {
+  content: "🔔";
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message {
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-time {
+  font-size: 14px;
+  color: #555;
+  background-color: #e6e9f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.span-element {
+  color: #007bff;
+  font-weight: bold;
+}
