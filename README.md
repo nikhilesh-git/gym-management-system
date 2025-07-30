@@ -36,13 +36,11 @@ npm install
 ```bash
 nodemon app.js
 ```
-
-> Make sure your SQLite database file (`gym.db`) exists or is created on first run.
-
+* You will see the message "Server Running at http://localhost:3000/" 
 ---
 
 ### 3. **Setup Frontend**
-
+* Open new terminal
 ```bash
 cd ../frontend
 npm install
