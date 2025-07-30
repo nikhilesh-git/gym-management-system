@@ -40,7 +40,7 @@ nodemon app.js
 ---
 
 ### 3. **Setup Frontend**
-* Open new terminal
+#### Open new terminal and go to the folder /gym-management-system/
 ```bash
 cd ../frontend
 npm install
