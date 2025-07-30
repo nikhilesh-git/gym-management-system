@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { jwtDecode } from "jwt-decode";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import Dashboard from "./Components/Dashboard";
 import AddMember from "./Components/AddMember";
 import UpdateOrDeleteMembers from "./Components/UpdateOrDeleteMember";
@@ -17,11 +19,12 @@ import MemberFeePackages from "./Components/MemberFeePackages";
 import MemberSupplementStore from "./Components/MemberSupplementStore";
 import MemberDietDetails from "./Components/MemberDietDetails";
 import ProtectedRoute from "./Components/ProtectedRoute";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 const App = () => {
   const [role, setRole] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const token = Cookies.get("jwt_token");
@@ -37,78 +40,59 @@ const App = () => {
     } else {
       setRole(null);
     }
-  }, []); 
+    setLoading(false);
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/login" element={<LoginPage setRole={setRole} />} />
-
+        <Route path="/login" element={<LoginPage setRole={setRole} />} />
 
         <Route element={<ProtectedRoute />}>
           <Route
             path="/dashboard"
             element={role === "admin" ? <Dashboard /> : <MemberDashboard />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/notifications"
             element={role === "admin" ? <AssignNotification /> : <NotFound />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/add-member"
             element={role === "admin" ? <AddMember /> : <NotFound />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/update-members"
             element={role === "admin" ? <UpdateOrDeleteMembers /> : <NotFound />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/create-bills"
             element={role === "admin" ? <CreateBills /> : <NotFound />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/fee-packages"
             element={role === "admin" ? <FeePackages /> : <MemberFeePackages />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/supplements"
             element={role === "admin" ? <SupplementStore /> : <MemberSupplementStore />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/reports"
             element={role === "admin" ? <ReportExport /> : <NotFound />}
           />
-        </Route>
-
-        <Route element={<ProtectedRoute />}>
           <Route
             path="/diet-details"
             element={role === "admin" ? <DietDetails /> : <MemberDietDetails />}
           />
         </Route>
 
-        <Route path="*" element={<NotFound />} />
+        {/* Redirect any unknown route to /login */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   );
