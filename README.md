@@ -81,3 +81,7 @@ gym-management-system/
 * SQLite is used for simplicity (easy to switch to PostgreSQL/MySQL).
 * Basic role-based access handled in frontend and backend.
 
+## Member Login Details
+
+* Email: writernikhilesh@gmail.com
+* password: Nikhilesh@2005
